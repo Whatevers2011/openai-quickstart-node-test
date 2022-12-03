@@ -17,29 +17,30 @@ export default function Home() {
     });
     const data = await response.json();
     setResult(data.result);
-    setAnimalInput("");
+    // setAnimalInput("");
   }
 
   return (
     <div>
       <Head>
-        <title>OpenAI Quickstart</title>
+        <title>AI Gift Finder</title>
         <link rel="icon" href="/dog.png" />
       </Head>
 
       <main className={styles.main}>
         <img src="/dog.png" className={styles.icon} />
-        <h3>Name my pet</h3>
+        <h3>Use AI to find a gift</h3>
         <form onSubmit={onSubmit}>
           <input
             type="text"
             name="animal"
-            placeholder="Enter an animal"
+            placeholder="Who is the gift for? Describe them."
             value={animalInput}
             onChange={(e) => setAnimalInput(e.target.value)}
           />
-          <input type="submit" value="Generate names" />
+          <input type="submit" value="Generate gifts" />
         </form>
+        {/* <div>{animalInput}</div> */}
         <div className={styles.result}>{result}</div>
       </main>
     </div>
