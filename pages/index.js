@@ -29,7 +29,7 @@ export default function Home() {
 
       <main className={styles.main}>
         <img src="/dog.png" className={styles.icon} />
-        <h3>Use AI to find a gift</h3>
+        <h3>AI Gift Finder</h3>
         <form onSubmit={onSubmit}>
           <input
             type="text"
@@ -40,8 +40,8 @@ export default function Home() {
           />
           <input type="submit" value="Generate gifts" />
         </form>
-        {/* <div>{animalInput}</div> */}
         <div className={styles.result}>{result}</div>
+        <div className={styles.credits}>AI Gift Finder is powered by <a href="https://openai.com/api/" target="_blank">OpenAI</a>. Created by <a href="https://louisemclennan.com/" target="_blank">Louise McLennan</a></div>
       </main>
     </div>
   );

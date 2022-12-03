@@ -64,3 +64,8 @@
   font-weight: bold;
   margin-top: 40px;
 }
+.main .credits{
+  font-size: 10px;
+  position: absolute;
+  bottom: 10px;
+}
