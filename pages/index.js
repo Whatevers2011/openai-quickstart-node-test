@@ -98,8 +98,13 @@ export default function Home() {
         <meta property="og:type" content="website" />
         <meta property="og:description" content="Use the power of AI to find the perfect gift."/>
         <meta property="og:url" content="https://www.aigiftfinder.com" />
-        <meta property="og:image" content="/ogimage.png" />
+        <meta property="og:image" content="https://www.aigiftfinder.com/ogimage.png" />
         <meta property="og:image:alt" content="A robot holding a gift" />
+        <meta name="twitter:card" content="summary"></meta>
+        <meta name="twitter:title" content="AI Gift Finder" />
+        <meta name="twitter:description" content="Use the power of AI to find the perfect gift." />
+        <meta name="twitter:image" content="https://www.aigiftfinder.com/ogimage.png" />
+        <meta name="twitter:image:alt" content="A robot holding a gift" />
       </Helmet>
 
       <main className={styles.main}>
