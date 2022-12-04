@@ -4,6 +4,7 @@ import styles from "./index.module.css";
 import React from "react";
 import parse from "html-react-parser";
 import Helmet from "react-helmet";
+import { Analytics } from '@vercel/analytics/react';
 
 export default function Home() {
   const [animalInput, setAnimalInput] = useState("");
@@ -136,6 +137,7 @@ export default function Home() {
           <div className={styles.result}>{parse(result)}</div>
           </main>
           <footer className={styles.footer}>AI Gift Finder is powered by <a href="https://openai.com/api/" target="_blank">OpenAI</a>. Follow us on <a href="https://twitter.com/aigiftfinder" target="_blank">Twitter</a>. Affiliate links help keep the site running!</footer>
+          <Analytics />
       </div>
   );
 }
