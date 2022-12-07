@@ -45,7 +45,7 @@ export default function Home() {
 
         //Bullet points
         if(index == 0){
-          linkedResults += '<h4>How about...</h4>'
+          linkedResults += '<div style="padding: 16px;"><p>Gifts for ' + animalInput + ':</p>'
           linkedResults += '<ul>';
         }
 
@@ -97,7 +97,7 @@ export default function Home() {
 
         //Sort the end
         if(index+1 == splitResult.length){
-          linkedResults += '</ul>';
+          linkedResults += '</ul></div>';
         }
       }
 
@@ -111,7 +111,7 @@ export default function Home() {
       <Helmet>
         <meta charSet="utf-8" />
         <title>AI Gift Finder</title>
-        <link rel="icon" href="/gift.png" />
+        <link rel="icon" href="/favicon.png" />
         <meta name="description" content="Use the power of AI to find the perfect gift."/>
         <meta name="keywords" content="gift, ai, birthday, christmas, finder, present, valentines, day, graduation, new, baby, home, job, christening, amazon, gpt-3, openai, generator"/>
         <meta name="robots" content="index, follow"></meta>
@@ -129,16 +129,18 @@ export default function Home() {
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap" rel="stylesheet"></link>
+        <style>{"body { background-color: #5333ED; }"}</style>
       </Helmet>
 
       <main className={styles.main}>
-          <img src="/robot.png" alt="A robot holding a gift" className={styles.icon} />
+          <img src="/vectorrobot.png" alt="A robot holding a gift" className={styles.icon} />
           <h3>AI Gift Finder</h3>
+          <p>Start by describing who the gift is for</p>
           <form onSubmit={onSubmit}>
             <input
               type="text"
               name="animal"
-              placeholder="Who is the gift for? Describe them."
+              placeholder="A woman who likes nature, history and learning"
               value={animalInput}
               onChange={(e) => setAnimalInput(e.target.value)}
             />

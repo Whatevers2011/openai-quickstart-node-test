@@ -1,35 +1,43 @@
-@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@700&family=Open+Sans&display=swap');
 
 .main,
 .main input {
   font-size: 16px;
   line-height: 24px;
-  color: #353740;
-  font-family: "Rubik", Helvetica, sans-serif;
+  color: #000;
+  font-family: "Open Sans", Helvetica, sans-serif;
 }
 .main {
   display: flex;
-  flex-direction: column;
+  flex-direction: column; 
   align-items: center;
   padding-top: 40px;
   /* padding: 10px 10px 40px 10px; */
 }
 .main .icon {
-  width: 150px;
+  width: 91px;
   align-items: center;
 }
+.main p, .main ul, .main li{
+  color: #fff;
+}
+.main p{
+  margin: 0px;
+  margin-bottom: 16px;
+}
 .main h3 {
-  font-size: 32px;
+  font-size: 45px;
   line-height: 40px;
   font-weight: bold;
-  color: #202123;
-  margin: 16px 0 16px;
+  color: #fff;
+  margin: 32px 0 16px;
+  font-family: "Lexend Deca", Helvetica, sans-serif;
 }
 .main h4 {
   font-size: 24px;
   line-height: 24px;
   font-weight: bold;
-  color: #202123;
+  color: #fff;
   margin: 16px 0 16px;
 }
 .main .instructions {
@@ -44,37 +52,44 @@
 }
 .main input[type="text"] {
   padding: 12px 16px;
-  border: 1px solid #7210a3;
+  border: 1px solid #fff;
+  background-color: #fff;
   border-radius: 4px;
-  margin-bottom: 16px;
+  margin-bottom: 8px;
 }
 .main ::placeholder {
-  color: #8e8ea0;
-  opacity: 1;
+  color: #000;
+  opacity: 0.4;
 }
 .main input[type="submit"] {
   padding: 12px 0;
-  color: #fff;
-  background-color: #7210a3;
+  color: #5333ED;
+  background-color: #50FFD7;
   border: none;
   border-radius: 4px;
   text-align: center;
   cursor: pointer;
 }
 .main input[type="submit"]:hover {
-  background-color: #000;
+  background-color: #fff;
 }
 .main .result {
-  /* font-weight: bold; */
   margin-top: 24px;
+  width: 320px;
+  background-color: #ffffff10;
+  border-radius: 4px;
   width: 320px;
 }
 
+.main .resultInterior {
+  padding: 16px;
+}
+
 .footer a, .main a{
-  color: #000;
+  color: #50FFD7;
 }
 .footer a:hover, .main a:hover{
-  color: #7210a3;
+  color: #fff;
 }
 
 .footer{
@@ -83,6 +98,7 @@
   /* position: fixed; */
   position: absolute;
   bottom: 10px;
+  color: #fff;
   /* z-index: 9; */
  
   /* (A2) DIMENSIONS */
