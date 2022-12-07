@@ -133,7 +133,7 @@ export default function Home() {
       </Helmet>
 
       <main className={styles.main}>
-          <img src="/vectorrobot.png" alt="A robot holding a gift" className={styles.icon} />
+          <img src="/VectorRobot.png" alt="A robot holding a gift" className={styles.icon} />
           <h3>AI Gift Finder</h3>
           <p>Start by describing who the gift is for</p>
           <form onSubmit={onSubmit}>
