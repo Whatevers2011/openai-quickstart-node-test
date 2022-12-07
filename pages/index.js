@@ -16,14 +16,24 @@ export default function Home() {
     if(animalInput.trim() != ""){
       setButtonText("Generating...");
       event.preventDefault();
-      const response = await fetch("/api/generate", {
+      const response = await fetch("/api/generate", { ///api/generate
         method: "POST",
         headers: {
           "Content-Type": "application/json",
         },
         body: JSON.stringify({ animal: animalInput }),
       });
-      const data = await response.json();
+
+      // const data;
+      let data;
+      try {
+        data = await response.json();
+      } catch (error) {
+        setResult("Error: The AI took too long to create your list of gifts. Please try again.");
+        setButtonText("Generate gifts");
+        return
+      }
+      
 
       let splitResult = data.result.split(",");
       let linkedResults = "";
