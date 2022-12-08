@@ -150,7 +150,6 @@ export default function Home() {
           </form>
           <div className={styles.result}>{parse(result)}</div>
           </main>
-          <footer className={styles.footer}>AI Gift Finder is powered by <a href="https://openai.com/api/" target="_blank">OpenAI</a>. Follow us on <a href="https://twitter.com/aigiftfinder" target="_blank">Twitter</a>. Affiliate links help keep the site running!</footer>
           <Analytics />
       </div>
   );
