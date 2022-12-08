@@ -71,7 +71,7 @@
   cursor: pointer;
 }
 .main input[type="submit"]:hover {
-  background-color: #fff;
+  background-color: #9fffe9;
 }
 .main .result {
   margin-top: 24px;
