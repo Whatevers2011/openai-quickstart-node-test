@@ -24,7 +24,7 @@ export default async function (req, res) {
 function generatePrompt(animal) {
   // const capitalizedAnimal =
   //   animal[0].toUpperCase() + animal.slice(1).toLowerCase();
-  return `Provide a list of the most unusual three gifts a loved one has ever recieved, separated by commas and starting with 'A' or 'An'. Do not number the list.
+  return `Provide a list of the best, most unusual three gifts a loved one has ever recieved that can be purchased from a store. Separate the list with commas and start each recommendation with 'A' or 'An'. Do not number the list.
 
 Recipient: ${animal}
 Gifts:`;
