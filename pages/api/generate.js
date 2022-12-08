@@ -24,12 +24,8 @@ export default async function (req, res) {
 function generatePrompt(animal) {
   // const capitalizedAnimal =
   //   animal[0].toUpperCase() + animal.slice(1).toLowerCase();
-  return `Provide a list of the best, most unusual three gifts a loved one has ever recieved, separated by commas.
+  return `Provide a list of the most unusual three gifts a loved one has ever recieved, separated by commas and starting with 'A' or 'An'. Do not number the list.
 
-Recipient: A 65 year old woman who likes animals, fashion and astronomy.
-Gifts: A popular book about space, a cross stitch kit of a robin, a fluffy pink scarf
-Recipient: A 42 year old man who likes gaming, whiskey and sci fi
-Gifts: A Steam gift card, a tibetan whiskey, a sci fi comic book
 Recipient: ${animal}
 Gifts:`;
 }

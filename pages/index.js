@@ -34,8 +34,10 @@ export default function Home() {
         return
       }
       
+      console.log(data.result)
 
-      let splitResult = data.result.split(",");
+      let trimResult = data.result.trim();
+      let splitResult = trimResult.split(",");
       let linkedResults = "";
 
       for (let index = 0; index < splitResult.length; index++) {
