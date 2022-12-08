@@ -6,6 +6,11 @@ import parse from "html-react-parser";
 import Helmet from "react-helmet";
 import { Analytics } from '@vercel/analytics/react';
 
+//Todo
+//Add basic SEO text
+//Fix the headers so ogdata works
+//Figure out how to make it shareable
+
 export default function Home() {
   const [animalInput, setAnimalInput] = useState("");
   const [result, setResult] = useState("");
@@ -47,7 +52,7 @@ export default function Home() {
 
         //Bullet points
         if(index == 0){
-          linkedResults += '<div style="padding: 16px;"><p>Gifts for ' + animalInput + ':</p>'
+          linkedResults += '<div style="padding: 16px;"><p>Gifts for <b>' + animalInput + '</b>:</p>'
           linkedResults += '<ul>';
         }
 
@@ -135,7 +140,7 @@ export default function Home() {
       </Helmet>
 
       <main className={styles.main}>
-          <img src="/VectorRobot.png" alt="A robot holding a gift" className={styles.icon} />
+          <img src="/VectorRobot.png" alt="A smiling robot face" className={styles.icon} />
           <h3>AI Gift Finder</h3>
           <p>Start by describing who the gift is for</p>
           <form onSubmit={onSubmit}>
