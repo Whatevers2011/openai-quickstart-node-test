@@ -3,7 +3,7 @@ import { useState } from "react";
 import styles from "./index.module.css";
 import React from "react";
 import parse from "html-react-parser";
-import Helmet from "react-helmet";
+// import Helmet from "react-helmet";
 import { Analytics } from '@vercel/analytics/react';
 import ReactGA from 'react-ga4';
 
@@ -130,7 +130,7 @@ export default function Home() {
 
   return (
     <div>
-      <Helmet>
+      <Head>
         <meta charSet="utf-8" />
         <title>AI Gift Finder</title>
         <link rel="icon" href="/favicon.png" />
@@ -152,7 +152,7 @@ export default function Home() {
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap" rel="stylesheet"></link>
         <style>{"body { background-color: #5333ED; }"}</style>
-      </Helmet>
+      </Head>
 
       <main className={styles.main}>
           <img src="/VectorRobot.png" alt="A smiling robot face" className={styles.icon} />
