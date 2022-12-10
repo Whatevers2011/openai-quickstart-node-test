@@ -5,7 +5,7 @@ import React from "react";
 import parse from "html-react-parser";
 import Helmet from "react-helmet";
 import { Analytics } from '@vercel/analytics/react';
-import ReactGA from 'react-ga';
+import ReactGA from 'react-ga4';
 
 //Todo
 //Add basic SEO text
@@ -42,6 +42,10 @@ export default function Home() {
       } catch (error) {
         setResult("Error: The AI took too long to create your list of gifts. Please try again.");
         setButtonText("Generate gifts");
+        ReactGA.event({
+          category: 'Error',
+          action: 'Json response error'
+        });
         return
       }
       
@@ -116,6 +120,11 @@ export default function Home() {
 
       setResult(linkedResults);
       setButtonText("Generate more gifts");
+
+      ReactGA.event({
+        category: 'Gift query string',
+        action: animalInput
+      });
     }
   }
 
