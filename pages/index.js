@@ -3,17 +3,15 @@ import { useState } from "react";
 import styles from "./index.module.css";
 import React from "react";
 import parse from "html-react-parser";
-// import Helmet from "react-helmet";
 import { Analytics } from '@vercel/analytics/react';
 import ReactGA from 'react-ga4';
 
 //Todo
 //Add basic SEO text
-//Fix the headers so ogdata works
 //Figure out how to make it shareable
 //A bigger input box
 //Make it look better
-//Link to amazon uk for uk users
+//Link to amazon uk for uk users -- https://vercel.com/docs/concepts/edge-network/headers#x-vercel-ip-country
 
 ReactGA.initialize('G-LBEEN8DRKQ');
 
