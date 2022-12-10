@@ -43,8 +43,8 @@ export default function Home() {
         setResult("Error: The AI took too long to create your list of gifts. Please try again.");
         setButtonText("Generate gifts");
         ReactGA.event({
-          category: 'Error',
-          action: 'Json response error'
+          name: 'Error',
+          details: 'Json response error'
         });
         return
       }
@@ -122,8 +122,8 @@ export default function Home() {
       setButtonText("Generate more gifts");
 
       ReactGA.event({
-        category: 'Gift query string',
-        action: animalInput
+        name: 'Gift query string',
+        details: animalInput
       });
     }
   }
