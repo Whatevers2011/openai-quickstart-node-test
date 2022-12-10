@@ -10,6 +10,9 @@ import { Analytics } from '@vercel/analytics/react';
 //Add basic SEO text
 //Fix the headers so ogdata works
 //Figure out how to make it shareable
+//A bigger input box
+//Make it look better
+//Link to amazon uk for uk users
 
 export default function Home() {
   const [animalInput, setAnimalInput] = useState("");
@@ -116,6 +119,14 @@ export default function Home() {
   return (
     <div>
       <Helmet>
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-LBEEN8DRKQ"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'G-LBEEN8DRKQ');
+        </script>
         <meta charSet="utf-8" />
         <title>AI Gift Finder</title>
         <link rel="icon" href="/favicon.png" />
