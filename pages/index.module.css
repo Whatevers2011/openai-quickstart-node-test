@@ -121,12 +121,14 @@
   width: 100%;
 }
 
-.belowFold h4 {
+.belowFold summary {
   font-size: 24px;
   font-weight: bold;
   color: #fff;
   font-family: "Lexend Deca", Helvetica, sans-serif;
-}
+  margin-top: 20px;
+  margin-bottom: 20px;
+ }
 
 .belowFold p, .footer p{
   font-family: "Open Sans", Helvetica, sans-serif;
