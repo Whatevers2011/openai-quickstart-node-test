@@ -180,7 +180,7 @@ export default function Home() {
       </div>
       <div className={styles.footer}>
         <div className={styles.footerContent}>
-          <p>AI Gift Finder - Find us on <a href="https://twitter.com/aigiftfinder">Twitter</a>!</p>
+          <p>AI Gift Finder - <a href="https://twitter.com/aigiftfinder">Twitter</a></p>
         </div>
       </div>
       <Analytics />
