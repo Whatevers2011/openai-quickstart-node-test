@@ -166,17 +166,18 @@ export default function Home() {
       </main>
       <div className={styles.belowFold}>
         <div className={styles.belowFoldContent}>
+          <h4>Frequently Asked Questions</h4>
           <details>
           <summary>What is AI Gift Finder?</summary>
-          <p>AI Gift Finder is an innovative new website that uses artificial intelligence to help you find the perfect gift for any occasion. With its advanced algorithms, AI Gift Finder makes gift-giving easy and stress-free by suggesting personalized gift ideas that are tailored to the recipient's interests and preferences. No more wasting time scrolling through endless gift options - let AI Gift Finder do the work for you and find the perfect gift in no time!</p>
+          <p><b>AI Gift Finder</b> uses <b>artificial intelligence</b> to help you find the perfect gift for any occasion. With its advanced algorithms, AI Gift Finder makes gift-giving easy and stress-free by suggesting <b>personalized gift ideas</b> that are tailored to the recipient's interests and preferences. No more wasting time scrolling through endless gift options - let AI Gift Finder do the work for you and find the perfect gift in no time!</p>
           </details>
           <details>
           <summary>How does AI Gift Finder work?</summary>
-          <p>AI Gift Finder uses the <a href="https://openai.com/">OpenAI</a> API to power its gift-finding capabilities. The OpenAI API is a collection of tools and services that allow developers to integrate advanced artificial intelligence capabilities into their applications. AI Gift Finder uses the OpenAI API to analyze the recipient's interests and preferences and generate personalized gift suggestions based on that information. By leveraging the power of the OpenAI API, AI Gift Finder is able to provide users with highly accurate and personalized gift recommendations in a matter of seconds.</p>
+          <p>AI Gift Finder uses the <a href="https://openai.com/">OpenAI</a> API to power its gift-finding capabilities. The OpenAI API is a collection of tools and services that allow developers to integrate <b>advanced artificial intelligence capabilities</b> into their applications. AI Gift Finder uses the OpenAI API to analyze the recipient's interests and preferences and generate personalized gift suggestions based on that information. By leveraging the power of the OpenAI API, AI Gift Finder is able to provide users with personalized gift recommendations in a matter of seconds.</p>
           </details>
           <details>
           <summary>Can AI Gift Finder help me find unusual gifts?</summary>
-          <p>AI Gift Finder can definitely help you find unusual gifts. With its advanced artificial intelligence algorithms, AI Gift Finder is able to analyze user inputs and generate personalized gift suggestions that are tailored to the recipient's interests and preferences. This means that AI Gift Finder can help you find gifts that are not only unique and unusual, but also highly relevant and meaningful to the recipient. Additionally, AI Gift Finder can save you time and effort by doing the work of sifting through countless gift options to find the perfect one. So whether you're looking for a truly unique and unusual gift, or just want to make gift-giving easy and stress-free, AI Gift Finder is a great tool to have on your side.</p>
+          <p>AI Gift Finder can definitely help you find unusual gifts. With its advanced artificial intelligence algorithms, AI Gift Finder is able to analyze user inputs and generate personalized gift suggestions that are tailored to the recipient's interests and preferences. This means that AI Gift Finder can help you find gifts that are not only <b>unique and unusual</b>, but also <b>highly relevant and meaningful</b> to the recipient. Additionally, AI Gift Finder can save you time and effort by doing the work of sifting through countless gift options to find the perfect one. So whether you're looking for a truly unique and unusual gift, or just want to make gift-giving easy and stress-free, AI Gift Finder is a great tool to have on your side.</p>
           </details>
           <details>
           <summary>Affiliate links</summary>

@@ -34,12 +34,14 @@
   margin: 32px 0 16px;
   font-family: "Lexend Deca", Helvetica, sans-serif;
 }
-.main h4 {
+.belowFold h4, .main h4 {
   font-size: 24px;
   line-height: 24px;
   font-weight: bold;
   color: #fff;
-  margin: 16px 0 16px;
+  margin: 16px 0 40px;
+  font-family: "Lexend Deca", Helvetica, sans-serif;
+  text-align: center;
 }
 .main .instructions {
   font-size: 12px;
@@ -95,7 +97,7 @@
 }
 
 .belowFold {
-  padding: 12px;
+  padding: 24px;
   background-color: #3f26ba;
   margin: -8px;
 }
@@ -122,12 +124,27 @@
 }
 
 .belowFold summary {
-  font-size: 24px;
+  font-size: 18px;
   font-weight: bold;
-  color: #fff;
+  color: #9fffe9;
   font-family: "Lexend Deca", Helvetica, sans-serif;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background-color: #321f95;
+  padding: 6px;
+  border-radius: 4px;
+ }
+
+ .belowFold summary:hover{
+  color: #fff;
+  cursor: pointer;
+ }
+
+ .belowFold details {
+  background-color: #321f95;
+  padding: 12px;
+  border-radius: 4px;
+  margin-bottom: 12px;
  }
 
 .belowFold p, .footer p{
