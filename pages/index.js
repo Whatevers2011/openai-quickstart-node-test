@@ -165,8 +165,23 @@ export default function Home() {
             <input type="submit" value={buttonText} />
           </form>
           <div className={styles.result}>{parse(result)}</div>
-          </main>
-          <Analytics />
+      </main>
+      <div className={styles.belowFold}>
+        <div className={styles.belowFoldContent}>
+          <h4>What is AI Gift Finder?</h4>
+          <p>AI Gift Finder is an innovative new website that uses artificial intelligence to help you find the perfect gift for any occasion. With its advanced algorithms, AI Gift Finder makes gift-giving easy and stress-free by suggesting personalized gift ideas that are tailored to the recipient's interests and preferences. No more wasting time scrolling through endless gift options - let AI Gift Finder do the work for you and find the perfect gift in no time!</p>
+          <h4>How does AI Gift Finder work?</h4>
+          <p>AI Gift Finder uses the <a href="https://openai.com/">OpenAI</a> API to power its gift-finding capabilities. The OpenAI API is a collection of tools and services that allow developers to integrate advanced artificial intelligence capabilities into their applications. AI Gift Finder uses the OpenAI API to analyze the recipient's interests and preferences and generate personalized gift suggestions based on that information. By leveraging the power of the OpenAI API, AI Gift Finder is able to provide users with highly accurate and personalized gift recommendations in a matter of seconds.</p>
+          <h4>Affiliate links</h4>
+          <p>This website is funded through affiliate links to <a href="https://www.amazon.com/">Amazon</a>. We get a small commission if you make a purchase from any of the suggested links.</p>
+        </div>
       </div>
+      <div className={styles.footer}>
+        <div className={styles.footerContent}>
+          <p>AI Gift Finder - Find us on <a href="https://twitter.com/aigiftfinder">Twitter</a>!</p>
+        </div>
+      </div>
+      <Analytics />
+    </div>
   );
 }
