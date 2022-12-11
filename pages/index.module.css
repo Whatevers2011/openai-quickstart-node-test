@@ -78,11 +78,11 @@
   background-color: #9fffe9;
 }
 .main .result {
-  margin-top: 24px;
+  /* margin-top: 24px;
   width: 320px;
   background-color: #ffffff10;
   border-radius: 4px;
-  width: 320px;
+  width: 320px; */
 }
 
 .main .resultInterior {
@@ -98,7 +98,7 @@
 
 .belowFold {
   padding: 24px;
-  background-color: #3f26ba;
+  background-color: #492dd3;
   margin: -8px;
 }
 
@@ -130,7 +130,7 @@
   font-family: "Lexend Deca", Helvetica, sans-serif;
   margin-top: 10px;
   margin-bottom: 10px;
-  background-color: #321f95;
+  background-color: #4027ba;
   padding: 6px;
   border-radius: 4px;
  }
@@ -141,7 +141,7 @@
  }
 
  .belowFold details {
-  background-color: #321f95;
+  background-color: #4027ba;
   padding: 12px;
   border-radius: 4px;
   margin-bottom: 12px;

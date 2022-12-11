@@ -5,6 +5,7 @@ import React from "react";
 import parse from "html-react-parser";
 import { Analytics } from '@vercel/analytics/react';
 import ReactGA from 'react-ga4';
+import 'animate.css';
 
 //Todo
 //Figure out how to make it shareable
@@ -55,7 +56,7 @@ export default function Home() {
 
         //Bullet points
         if(index == 0){
-          linkedResults += '<div style="padding: 16px;"><p>Gifts for <b>' + animalInput + '</b>:</p>'
+          linkedResults += '<div class="animate__animated animate__fadeIn" style="margin-top: 24px; width: 320px; background-color: #492dd3; border-radius: 4px;width: 320px;"><div style="padding: 16px;"><p>Gifts for <b>' + animalInput + '</b>:</p>'
           linkedResults += '<ul>';
         }
 
@@ -107,7 +108,7 @@ export default function Home() {
 
         //Sort the end
         if(index+1 == splitResult.length){
-          linkedResults += '</ul></div>';
+          linkedResults += '</ul></div></div>';
         }
       }
 
@@ -151,22 +152,22 @@ export default function Home() {
       <main className={styles.main}>
           <img src="/VectorRobot.png" alt="A smiling robot face" className={styles.icon} />
           <h3>AI Gift Finder</h3>
-          <p>Start by describing who the gift is for</p>
-          <form onSubmit={onSubmit}>
-            <input
-              type="text"
-              name="animal"
-              placeholder="A woman who likes nature, history and learning"
-              value={animalInput}
-              onChange={(e) => setAnimalInput(e.target.value)}
-            />
-            <input type="submit" value={buttonText} />
-          </form>
-          <div className={styles.result}>{parse(result)}</div>
+            <p>Start by describing who the gift is for</p>
+            <form onSubmit={onSubmit}>
+              <input
+                type="text"
+                name="animal"
+                placeholder="A woman who likes nature, history and learning"
+                value={animalInput}
+                onChange={(e) => setAnimalInput(e.target.value)}
+              />
+              <input type="submit" value={buttonText} />
+            </form>
+          <div className={styles.result} id="results">{parse(result)}</div>
       </main>
       <div className={styles.belowFold}>
         <div className={styles.belowFoldContent}>
-          <h4>Frequently Asked Questions</h4>
+          <h4>About AI Gift Finder</h4>
           <details>
           <summary>What is AI Gift Finder?</summary>
           <p><b>AI Gift Finder</b> uses <b>artificial intelligence</b> to help you find the perfect gift for any occasion. With its advanced algorithms, AI Gift Finder makes gift-giving easy and stress-free by suggesting <b>personalized gift ideas</b> that are tailored to the recipient's interests and preferences. No more wasting time scrolling through endless gift options - let AI Gift Finder do the work for you and find the perfect gift in no time!</p>
