@@ -1,0 +1,30 @@
+{
+  "id": "mock-doc-id",
+  "uid": "everywhere",
+  "url": "/everywhere",
+  "type": "page",
+  "href": null,
+  "tags": [],
+  "first_publication_date": "1970-01-01T00:00:01+0000",
+  "last_publication_date": "1970-01-01T00:00:01+0000",
+  "slugs": [],
+  "linked_documents": [],
+  "lang": "en-us",
+  "alternate_languages": [],
+  "data": {
+    "greeting": [
+      {
+        "type": "paragraph",
+        "text": "Irure dolore nulla et et quis anim consequat laborum cupidatat sint exercitation aliquip. Lorem sint Lorem eu consequat in est eiusmod eiusmod pariatur adipisicing. Incididunt voluptate nisi tempor cupidatat sunt cillum.",
+        "spans": []
+      }
+    ],
+    "description": [
+      {
+        "type": "paragraph",
+        "text": "Labore consectetur nostrud qui cillum sit.",
+        "spans": []
+      }
+    ]
+  }
+}
