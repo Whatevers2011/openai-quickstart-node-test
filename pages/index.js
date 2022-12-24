@@ -10,7 +10,6 @@ import 'animate.css';
 //Todo
 //Figure out how to make it shareable
 //A bigger input box
-//Link to amazon uk for uk users -- https://vercel.com/docs/concepts/edge-network/headers#x-vercel-ip-country
 
 ReactGA.initialize('G-LBEEN8DRKQ');
 
@@ -97,12 +96,12 @@ export default function Home() {
         }
 
         //Sort the link
-        linkedResults += '<a target="_blank" href="https://www.amazon.com/gp/search?ie=UTF8&tag=aigiftfinder-20&linkCode=ur2&linkId=065bb6b5f906384b49a52a113938c35b&camp=1789&creative=9325&index=aps&keywords=';
+        // linkedResults += '<a target="_blank" href="https://www.amazon.com/gp/search?ie=UTF8&tag=aigiftfinder-20&linkCode=ur2&linkId=065bb6b5f906384b49a52a113938c35b&camp=1789&creative=9325&index=aps&keywords=';
         substringGift = gift.substring(substringToRemove, gift.length)
-        linkedResults += substringGift.replace(/ /g, "+").replace('.', "");
-        linkedResults += '">';
+        // linkedResults += substringGift.replace(/ /g, "+").replace('.', "");
+        // linkedResults += '">';
         linkedResults += gift.substring(substringToRemove, gift.length).replace('.', "");
-        linkedResults += "</a>";
+        // linkedResults += "</a>";
 
         linkedResults += "</li>";
 
@@ -114,6 +113,8 @@ export default function Home() {
 
       setResult(linkedResults);
       setButtonText("Generate more gifts");
+
+      console.log(linkedResults);
 
       // ReactGA.event({
       //   name: 'Gift query string',
@@ -179,10 +180,6 @@ export default function Home() {
           <details>
           <summary>Can AI Gift Finder help me find unusual gifts?</summary>
           <p>AI Gift Finder can definitely help you find unusual gifts. With its advanced artificial intelligence algorithms, AI Gift Finder is able to analyze user inputs and generate personalized gift suggestions that are tailored to the recipient's interests and preferences. This means that AI Gift Finder can help you find gifts that are not only <b>unique and unusual</b>, but also <b>highly relevant and meaningful</b> to the recipient. Additionally, AI Gift Finder can save you time and effort by doing the work of sifting through countless gift options to find the perfect one. So whether you're looking for a truly unique and unusual gift, or just want to make gift-giving easy and stress-free, AI Gift Finder is a great tool to have on your side.</p>
-          </details>
-          <details>
-          <summary>Affiliate links</summary>
-          <p>This website is funded through affiliate links to <a href="https://www.amazon.com/">Amazon</a>. We get a small commission if you make a purchase from any of the suggested links.</p>
           </details>
         </div>
       </div>
